@@ -1,5 +1,11 @@
 const Country = ({country, index, visitCountry, visited}) => {
 
+    const handleCheckBox = () => {
+        visitCountry(index)
+        const visitList = document.querySelector("section");
+        visitList.scrollIntoView({behavior: "smooth"})
+    }
+
     return(
         <>
             <div className="country-element">
@@ -11,7 +17,7 @@ const Country = ({country, index, visitCountry, visited}) => {
                     <input 
                     type="checkbox"
                     id="visited"
-                    onClick={() => visitCountry(index)}
+                    onClick={handleCheckBox}
                     />
                 )}
             </div>

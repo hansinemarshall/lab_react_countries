@@ -35,11 +35,11 @@ const CountryContainer = () => {
     return (
         <>
         <h2 className="title">Countries</h2>
-        <section className="country-list">
+        <div className="country-list">
         {countryList.map((country, index) => (
             <Country key={country.name.common} index={index} country={country} visitCountry={visitCountry}/>
         ))}
-        </section>
+        </div>
         <section className="visited-list">
             <h3>Visited Countries</h3>
             {visitedCountryList.map((country, index) => (
