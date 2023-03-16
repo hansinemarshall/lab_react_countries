@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  padding-left: 2em;
+  padding-top: 1em;
+  font-family: monospace;
+  
+}
+.title{
+  font-size: 5em;
+  margin: 0;
+}
+
+.country-list{
+  column-gap: 30px ;
+  column-count: 4;
+  
+
+}
+
+.country-element{
+  break-inside: avoid;
+  outline-style: dashed;
+  outline-color: darkgray;
+  border-radius: 25% 10%;
+  padding: 1em;
+  margin: 1em;
+}
+
+
